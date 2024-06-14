@@ -1,11 +1,11 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { HeaderSimple } from '../components/HeaderSimple/Header';
+import { HeroBullets } from '@/components/Hero/Hero';
 
 export function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <HeaderSimple />
+      <HeroBullets />
     </>
   );
 }

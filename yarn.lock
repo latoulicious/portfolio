@@ -2707,7 +2707,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.10.2":
+"@mantine/carousel@npm:^7.10.2":
+  version: 7.10.2
+  resolution: "@mantine/carousel@npm:7.10.2"
+  peerDependencies:
+    "@mantine/core": 7.10.2
+    "@mantine/hooks": 7.10.2
+    embla-carousel-react: ">=7.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/473bd58cced167c82756218d7ef2efec0f7929b89ef0988093b91cfae2d201a3a783ec7b9dadc758cd52e769f5f1245a42938ddbd82cd654fadc93cf11ad317b
+  languageName: node
+  linkType: hard
+
+"@mantine/core@npm:^7.10.2":
   version: 7.10.2
   resolution: "@mantine/core@npm:7.10.2"
   dependencies:
@@ -2725,12 +2738,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:7.10.2":
+"@mantine/hooks@npm:^7.10.2":
   version: 7.10.2
   resolution: "@mantine/hooks@npm:7.10.2"
   peerDependencies:
     react: ^18.2.0
   checksum: 10c0/ebe2f1d21b5ca960194526aab76c72b684875655db651953afef211f07379b25dc7ca9fd36a7aaffe7a50536ef042c99c434c0b0de9c62d74845ab1228923cd1
+  languageName: node
+  linkType: hard
+
+"@mantine/nprogress@npm:^7.10.2":
+  version: 7.10.2
+  resolution: "@mantine/nprogress@npm:7.10.2"
+  dependencies:
+    "@mantine/store": "npm:7.10.2"
+  peerDependencies:
+    "@mantine/core": 7.10.2
+    "@mantine/hooks": 7.10.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/7113a920776601603417aef801ab8b52aafc1db0e624418dc904d4b82f3a452a71572e76bad31ac650f9499fb7a2cc2da00c2f87bde96614934bbb6db5229e03
+  languageName: node
+  linkType: hard
+
+"@mantine/store@npm:7.10.2":
+  version: 7.10.2
+  resolution: "@mantine/store@npm:7.10.2"
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 10c0/4d2dedf8bf9cb88e7eceee867c72da5f149379a650de5989b121bcd728d67f96c3b0eb7148eebd592eae727ac5d109540f50745bcf744713c33b6fad8b6225dd
+  languageName: node
+  linkType: hard
+
+"@mantinex/mantine-logo@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mantinex/mantine-logo@npm:1.0.1"
+  peerDependencies:
+    "@mantine/core": ">=7.0.0"
+    "@mantine/hooks": ">=7.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/d1628195eaf6681c4366c0154ee2e3adf1b863432ab15e6285a3f33ffbb33a17ec0b5a90a9ced2429cbf2841d4de11f72320ca3d37578d6908a5b9f194fea2d3
   languageName: node
   linkType: hard
 
@@ -4124,6 +4172,24 @@ __metadata:
     "@types/express": "npm:^4.7.0"
     file-system-cache: "npm:2.3.0"
   checksum: 10c0/1db2ab1bf629ca3a7237eb4d55b82a0d3cc4d649b30f5c85b88d2cdef44195b1a8fa220fcc1b3024d6b0f24bfbc3e6eda104f6f8df4cde80ad2809590008729a
+  languageName: node
+  linkType: hard
+
+"@tabler/icons-react@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "@tabler/icons-react@npm:3.6.0"
+  dependencies:
+    "@tabler/icons": "npm:3.6.0"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 10c0/55a5acdddc2cbda07d8531fbc33359fc778c0887172fa0ad5944085dea95db5018988964f1105f39ff95ea34a7a434e1d29c723459d0344c28c7a57ccc655eec
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:3.6.0":
+  version: 3.6.0
+  resolution: "@tabler/icons@npm:3.6.0"
+  checksum: 10c0/08e4442cf1a08f31e5bf03863b2e94d1a57c5e150a19acba6f2cd2dd56a031bd35757bfc69effe7592ca1f62d530b12e25f65596a9ddc9311eff3e1e89e36f85
   languageName: node
   linkType: hard
 
@@ -6503,6 +6569,34 @@ __metadata:
   version: 1.4.782
   resolution: "electron-to-chromium@npm:1.4.782"
   checksum: 10c0/bf3b7e3c3d3ba20ee94958c0a9fa42dd6224140e070f3e31306986c6974ddb26f4b0ebe688ee140b98ebb410d3cb79f60a2e63832b767e800dbb2f471e5d72a4
+  languageName: node
+  linkType: hard
+
+"embla-carousel-react@npm:^8.1.5":
+  version: 8.1.5
+  resolution: "embla-carousel-react@npm:8.1.5"
+  dependencies:
+    embla-carousel: "npm:8.1.5"
+    embla-carousel-reactive-utils: "npm:8.1.5"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0
+  checksum: 10c0/a8c64e948f7bbe11a5d62ca4ebd70030a7a0dea2d772ab0c545026f2facea493bd5ddabccdb915922ed41f8af44d61140ae485521fb3495af8e13d7e43405aed
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.1.5":
+  version: 8.1.5
+  resolution: "embla-carousel-reactive-utils@npm:8.1.5"
+  peerDependencies:
+    embla-carousel: 8.1.5
+  checksum: 10c0/813a358f7372ddeb7a49e637e21b1580bda42797f97cbb8f7a2ad63a1803b0f2a9d2ecd5f0c088bd2447bb0a6c932f31e5c820698d83324a23548bd9242deb41
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.1.5":
+  version: 8.1.5
+  resolution: "embla-carousel@npm:8.1.5"
+  checksum: 10c0/5fa18cf332654ce3f380874e41caa6a520a04c5d43f2832f1d797b74e822f271de61f27346155fc3a8321633f1968b7b808ad0d56152305c8696ff5d12d3200f
   languageName: node
   linkType: hard
 
@@ -9470,8 +9564,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mantine-vite-template@workspace:."
   dependencies:
-    "@mantine/core": "npm:7.10.2"
-    "@mantine/hooks": "npm:7.10.2"
+    "@mantine/carousel": "npm:^7.10.2"
+    "@mantine/core": "npm:^7.10.2"
+    "@mantine/hooks": "npm:^7.10.2"
+    "@mantine/nprogress": "npm:^7.10.2"
+    "@mantinex/mantine-logo": "npm:^1.0.1"
     "@storybook/addon-essentials": "npm:^8.1.3"
     "@storybook/addon-interactions": "npm:^8.1.3"
     "@storybook/addon-links": "npm:^8.1.3"
@@ -9479,6 +9576,7 @@ __metadata:
     "@storybook/react": "npm:^8.1.3"
     "@storybook/react-vite": "npm:^8.1.3"
     "@storybook/testing-library": "npm:^0.2.2"
+    "@tabler/icons-react": "npm:^3.6.0"
     "@testing-library/dom": "npm:^9.3.4"
     "@testing-library/jest-dom": "npm:^6.4.2"
     "@testing-library/react": "npm:^14.2.1"
@@ -9488,6 +9586,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
     "@typescript-eslint/parser": "npm:^7.2.0"
     "@vitejs/plugin-react": "npm:^4.2.1"
+    embla-carousel-react: "npm:^8.1.5"
     eslint: "npm:^8.57.0"
     eslint-config-airbnb: "npm:19.0.4"
     eslint-config-airbnb-typescript: "npm:^18.0.0"
@@ -9498,8 +9597,8 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.6.0"
     identity-obj-proxy: "npm:^3.0.0"
     jsdom: "npm:^24.0.0"
-    postcss: "npm:^8.4.35"
-    postcss-preset-mantine: "npm:1.15.0"
+    postcss: "npm:^8.4.38"
+    postcss-preset-mantine: "npm:^1.15.0"
     postcss-simple-vars: "npm:^7.0.1"
     prettier: "npm:^3.2.5"
     prop-types: "npm:^15.8.1"
@@ -10509,7 +10608,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-mantine@npm:1.15.0":
+"postcss-preset-mantine@npm:^1.15.0":
   version: 1.15.0
   resolution: "postcss-preset-mantine@npm:1.15.0"
   dependencies:
@@ -10593,7 +10692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.33, postcss@npm:^8.4.35":
+"postcss@npm:^8.4.33":
   version: 8.4.35
   resolution: "postcss@npm:8.4.35"
   dependencies:
