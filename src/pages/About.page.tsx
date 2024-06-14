@@ -1,11 +1,11 @@
+import { Welcome } from '@/components/Welcome/Welcome';
 import { Header } from '../components/Header/Header';
-import { Hero } from '@/components/Hero/Hero';
 
-export function HomePage() {
+export function AboutPage() {
   return (
     <>
       <Header />
-      <Hero />
+      <Welcome />
     </>
   );
 }

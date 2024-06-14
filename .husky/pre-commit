@@ -1,0 +1,3 @@
+Echo "Prettier Start"
+yarn prettier:write
+Echo "Prettier End"
