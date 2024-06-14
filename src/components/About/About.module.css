@@ -1,0 +1,87 @@
+.container {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.inner {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between;
+  padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+}
+
+.content {
+  max-width: rem(1366px);
+  margin-left: calc(var(--mantine-spacing-xl) * 3); /* Add margin to the left of content */
+
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-size: rem(34px); /* Adjusted font-size */
+  line-height: 1.2;
+  font-weight: 900;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  text-align: justify;
+  text-justify: inter-word;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
+}
+
+.control {
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex: 1;
+  }
+}
+
+.image {
+  width: rem(376px);
+  height: rem(356px);
+  border-radius: 50%;
+  object-fit: cover;
+  position: sticky;
+  top: rem(10px); /* Adjust this value based on your layout */
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%; /* Adjust the size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: var(--mantine-spacing-md); /* Add margin below the image */
+    position: static; /* Remove sticky positioning on smaller screens */
+  }
+}
+
+.highlight {
+  position: relative;
+  background-image: linear-gradient(45deg, var(--mantine-color-cyan-5), var(--mantine-color-indigo-5));
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: var(--mantine-radius-sm);
+  padding: rem(4px) rem(12px);
+  white-space: nowrap; /* Prevent the highlight text from breaking */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+.link {
+  text-decoration: underline;
+  color: inherit; /* Keeps the color same as surrounding text */
+  cursor: pointer;
+
+  &:hover {
+    color: var(--mantine-color-blue-light); /* Change color on hover */
+  }
+}

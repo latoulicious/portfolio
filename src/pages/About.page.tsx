@@ -1,11 +1,11 @@
-import { Welcome } from '@/components/Welcome/Welcome';
 import { Header } from '../components/Header/Header';
+import { About } from '../components/About/About';
 
 export function AboutPage() {
   return (
     <>
       <Header />
-      <Welcome />
+      <About />
     </>
   );
 }

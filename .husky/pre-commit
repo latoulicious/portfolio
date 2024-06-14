@@ -3,4 +3,6 @@
 
 echo "Prettier Start"
 yarn prettier:write
+
+yarn prettier:write
 echo "Prettier End"

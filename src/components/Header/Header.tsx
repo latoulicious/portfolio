@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Container, Group, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Link, useLocation } from 'react-router-dom';
-import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
+import { ColorSchemeToggle } from '../ColorScheme/ColorSchemeToggle';
 import classes from './Header.module.css';
 import logoLight from '@/assets/logo-light.svg';
 import logoDark from '@/assets/logo-dark.svg';
@@ -11,9 +11,8 @@ import logoDark from '@/assets/logo-dark.svg';
 const links = [
   { link: '/', label: 'Home' },
   { link: '/about', label: 'About' },
-  { link: '/error', label: 'Project' },
-  { link: '/error', label: 'Blog' },
-  { link: '/error', label: 'Contact Me' },
+  { link: '/project', label: 'Project' },
+  { link: '/error', label: 'WIP 🎉' },
 ];
 
 export function Header() {

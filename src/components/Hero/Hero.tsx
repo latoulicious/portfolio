@@ -5,11 +5,7 @@ import classes from './Hero.module.css';
 
 type TypingEffectCallback = () => void; // Optional callback function type
 
-const typingEffect = (
-  text: string,
-  speed: number,
-  callback?: TypingEffectCallback
-) => {
+const typingEffect = (text: string, speed: number, callback?: TypingEffectCallback) => {
   let i: number = 0;
   const typeWriter = () => {
     const element = document.getElementById('typedText');
@@ -36,7 +32,7 @@ export function Hero() {
   useEffect(() => {
     const texts = [
       'Software Engineering graduate with fundamental knowledge of software design, development, and testing.',
-      'Seeking to utilize broad educational background with excellent analytical, technical, and programming skills to thrive as an entry-level software engineer.',
+      'Explore my projects to see my work in action!',
     ];
 
     const handleTypingComplete = () => {
