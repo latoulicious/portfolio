@@ -6,22 +6,27 @@ import classes from './Hero.module.css';
 type TypingEffectCallback = () => void; // Optional callback function type
 
 const typingEffect = (
-  text: string, // Type annotation for 'text' parameter
-  speed: number, // Type annotation for 'speed' parameter
-  callback?: TypingEffectCallback // Optional callback with type annotation
+  text: string,
+  speed: number,
+  callback?: TypingEffectCallback
 ) => {
-  let i = 0;
+  let i: number = 0;
   const typeWriter = () => {
-    if (i < text.length) {
-      document.getElementById('typedText').textContent += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    } else if (callback) {
-      // Use optional chaining to handle potential null callback
-      callback();
+    const element = document.getElementById('typedText');
+    if (element) {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        // eslint-disable-next-line no-plusplus
+        i++;
+        setTimeout(typeWriter, speed);
+      } else if (callback) {
+        callback();
+      }
     }
   };
-  document.getElementById('typedText').textContent = ''; // Clear the content before starting
+  if (document.getElementById('typedText')) {
+    document.getElementById('typedText')!.textContent = '';
+  } // Clear the content before starting
   typeWriter();
 };
 
