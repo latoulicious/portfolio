@@ -1,8 +1,10 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "Prettier Start"
-yarn prettier:write
+echo "Eslint Start"
+yarn lint
+echo "Eslint End"
 
+echo "Prettier Start"
 yarn prettier:write
 echo "Prettier End"

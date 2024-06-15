@@ -1,7 +1,6 @@
-// Header.tsx
 import { useState, useEffect } from 'react';
-import { Container, Group, Burger } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { Container, Group, Burger, Drawer, ScrollArea } from '@mantine/core';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { Link, useLocation } from 'react-router-dom';
 import { ColorSchemeToggle } from '../ColorScheme/ColorSchemeToggle';
 import classes from './Header.module.css';
@@ -16,17 +15,17 @@ const links = [
 ];
 
 export function Header() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
   const location = useLocation();
   const [active, setActive] = useState(location.pathname);
-  const [colorScheme, setColorScheme] = useState('light'); // State to track color scheme
+  const [colorScheme, setColorScheme] = useState('light');
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     setActive(location.pathname);
   }, [location.pathname]);
 
   useEffect(() => {
-    // Set initial color scheme based on user preference or system settings
     const currentColorScheme = localStorage.getItem('color-scheme') || 'light';
     setColorScheme(currentColorScheme);
   }, []);
@@ -34,7 +33,7 @@ export function Header() {
   const toggleColorScheme = () => {
     const newColorScheme = colorScheme === 'light' ? 'dark' : 'light';
     setColorScheme(newColorScheme);
-    localStorage.setItem('color-scheme', newColorScheme); // Store color scheme preference
+    localStorage.setItem('color-scheme', newColorScheme);
   };
 
   const items = links.map((link) => (
@@ -59,18 +58,36 @@ export function Header() {
           />
         </div>
         <div className={classes.rightSection}>
-          <Group
-            gap={5}
-            style={{ alignItems: 'center', height: '100%' }}
-            className={`${classes.navigation} visibleFrom="xs"`}
-          >
-            {items}
-            <ColorSchemeToggle onToggle={toggleColorScheme} />{' '}
-            {/* Toggle button for light/dark mode */}
-          </Group>
+          {!isMobile && (
+            <Group
+              gap={5}
+              style={{ alignItems: 'center', height: '100%' }}
+              className={classes.navigation}
+            >
+              {items}
+              <ColorSchemeToggle onToggle={toggleColorScheme} />
+            </Group>
+          )}
+          {isMobile && (
+            <>
+              <div className={classes.colorSchemeToggle}>
+                <ColorSchemeToggle onToggle={toggleColorScheme} />
+              </div>
+              <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+            </>
+          )}
         </div>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
+      <Drawer
+        opened={opened}
+        onClose={close}
+        title="Navigation"
+        padding="md"
+        size="xs"
+        hiddenFrom="md"
+      >
+        <ScrollArea style={{ height: 'calc(100vh - 60px)' }}>{items}</ScrollArea>
+      </Drawer>
     </header>
   );
 }
