@@ -1,11 +1,13 @@
 import { Header } from '@/components/Header/Header';
-import { ProjectGrid } from '@/components/Project/Project';
+import { ProjectCard } from '@/components/ProjectCard/ProjectCard';
+import { Footer } from '@/components/Footer/Footer';
 
 export function ProjectPage() {
   return (
     <>
       <Header />
-      <ProjectGrid />
+      <ProjectCard />
+      <Footer />
     </>
   );
 }

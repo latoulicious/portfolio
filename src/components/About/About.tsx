@@ -9,15 +9,16 @@ export function About() {
         <Image src="https://i.ibb.co.com/VWhxcQd/IMG20200217060310.jpg" className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>
-            Hey there! <br />
+            Hey there!
+            <Space h="xs" />
             I'm<span className={classes.highlight}>Muhammad Arsyad T.R</span>
           </Title>
           <Text c="dimmed" mt="md">
             A Recent Software Engineering graduate with a passion for collaboration and learning.
             Through my studies, I honed my skills in software design, development, and testing.
             <Space h="md" />
-            Im eager to leverage my knowledge and contribute to a team as an entry-level software
-            engineer. Im particularly interested in backend development and excited to learn from
+            I'm eager to leverage my knowledge and contribute to a team as an entry-level software
+            engineer. I'm particularly interested in backend development and excited to learn from
             experienced professionals.
           </Text>
           <Divider my="md" />
