@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Group gap={0} className={classes.links} noWrap>
+        <Group gap={0} className={classes.links} wrap="nowrap">
           <ActionIcon
             size="lg"
             color="gray"
