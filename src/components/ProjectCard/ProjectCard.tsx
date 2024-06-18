@@ -28,7 +28,7 @@ const mockdata: CardContentProps[] = [
     title: 'Sistem Informasi Perangkat Pembelajaran',
     image:
       'https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    desc: 'An internal information system for school to streamline educational resource management.',
+    desc: 'An internal information system for school designed to streamline educational resource management.',
     link: 'https://github.com/latoulicious/SIPP', // Add your GitHub link here
     badges: ['Go', 'JavaScript', 'TypeScript', 'PostgreSQL'],
   },
@@ -36,7 +36,7 @@ const mockdata: CardContentProps[] = [
     title: 'Healthie',
     image:
       'https://images.unsplash.com/photo-1565262353342-6e919eab5b58?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    desc: 'An internal information system for clinics to streamline clinic operations.',
+    desc: 'An internal information system for clinics designed to streamline clinic operations.',
     link: 'https://github.com/latoulicious/Healthie', // Add your GitHub link here
     badges: ['PHP', 'Yii', 'PostgreSQL'],
   },
@@ -44,7 +44,7 @@ const mockdata: CardContentProps[] = [
   //   {
   //     title: 'Hawaii beaches review: better than you think',
   //     image:
-  //       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+  //       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=720&q=80',
   //     desc: 'September 9, 2022',
   //     badges: ['Python', 'Django'],
   //   },
@@ -77,14 +77,17 @@ const CardContent: React.FC<CardContentProps> = ({ title, image, desc, link, bad
     </Group>
 
     <Card.Section className={classes.footer}>
-      <div style={{ display: 'flex' }}>
+      <div className={classes.badgesContainer}>
         {badges.map((badge, index) => (
-          <div key={index} style={{ display: 'flex', alignItems: 'center' }}>
-            <Badge size="md" variant="gradient" gradient={{ from: 'blue', to: 'cyan', deg: 90 }}>
-              {badge}
-            </Badge>
-            <Space w="xs" />
-          </div>
+          <Badge
+            key={index}
+            size="md"
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+            className={classes.badge}
+          >
+            {badge}
+          </Badge>
         ))}
       </div>
     </Card.Section>
@@ -94,7 +97,7 @@ const CardContent: React.FC<CardContentProps> = ({ title, image, desc, link, bad
 export function ProjectCard() {
   return (
     <Container py="xl">
-      <SimpleGrid cols={2} spacing="xl">
+      <SimpleGrid cols={2} spacing="xl" className={classes.grid}>
         {mockdata.map((item, index) => (
           <Card
             key={index}

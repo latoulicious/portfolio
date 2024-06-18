@@ -1,7 +1,7 @@
 .card {
   background-color: var(--mantine-color-body);
   box-shadow: var(--mantine-shadow-md);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .title {
@@ -13,4 +13,20 @@
   padding: var(--mantine-spacing-xs) var(--mantine-spacing-lg);
   margin-top: var(--mantine-spacing-md);
   border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}
+
+.badgesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.badge {
+  margin-right: 8px;
+}
+
+.grid {
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr !important;
+  }
 }
