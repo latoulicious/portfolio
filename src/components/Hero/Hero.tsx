@@ -31,7 +31,7 @@ export function Hero() {
 
   useEffect(() => {
     const texts = [
-      'Software Engineering graduate with fundamental knowledge of software design, development, and testing.',
+      'Information Systems graduate with a solid foundation in software design, development, and testing.',
       'Explore my projects to see my work in action!',
     ];
 

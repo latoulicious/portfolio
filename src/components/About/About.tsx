@@ -14,12 +14,14 @@ export function About() {
             I'm<span className={classes.highlight}>Muhammad Arsyad T.R</span>
           </Title>
           <Text c="dimmed" mt="md">
-            A Recent Software Engineering graduate with a passion for collaboration and learning.
-            Through my studies, I honed my skills in software design, development, and testing.
+            Information Systems graduate with a solid foundation in software design, development,
+            and testing.
             <Space h="md" />
-            I'm eager to leverage my knowledge and contribute to a team as an entry-level software
-            engineer. I'm particularly interested in backend development and excited to learn from
-            experienced professionals.
+            Eager to leverage analytical, technical, and programming skills to excel as an
+            entry-level software engineer.
+            <Space h="md" />
+            I'm particularly interested in backend development and excited to learn from experienced
+            professionals.
           </Text>
           <Divider my="md" />
           <Text c="dimmed" mt="md">
@@ -45,7 +47,7 @@ export function About() {
               <List.Item>Go</List.Item>
               <List.Item>PHP</List.Item>
               <List.Item>Typescript</List.Item>
-              <List.Item>SQL (e.g., MySQL, PostgreSQL)</List.Item>
+              <List.Item>PostgreSQL</List.Item>
             </List>
           </Text>
         </div>
