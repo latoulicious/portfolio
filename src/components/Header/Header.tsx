@@ -52,7 +52,7 @@ export function Header() {
       <Container size="md" className={classes.inner}>
         <div className={classes.leftSection} style={{ marginTop: '10px', marginBottom: 'auto' }}>
           <img
-            src={colorScheme === 'light' ? logoDark : logoLight}
+            src={colorScheme === 'light' ? logoLight : logoDark}
             alt="Logo"
             style={{ width: '100px', height: 'auto' }}
           />
