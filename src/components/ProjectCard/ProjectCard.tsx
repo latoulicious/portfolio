@@ -40,6 +40,14 @@ const mockdata: CardContentProps[] = [
     link: 'https://github.com/latoulicious/Healthie', // Add your GitHub link here
     badges: ['PHP', 'Yii', 'PostgreSQL'],
   },
+  {
+      title: 'Twitter Kafka',
+      image:
+        'https://earlsribpalace.com/wp-content/uploads/2019/07/coming-soon-store-placeholder-image.gif',
+      desc: 'Real Time Twitter feed aggregator',
+      link: '#', // Add your GitHub link here
+      badges: ['Go', 'TypeScript', 'PostgreSQL', 'Apache Kafka'],
+  },
   // Template In case for future project
   //   {
   //     title: 'Hawaii beaches review: better than you think',
