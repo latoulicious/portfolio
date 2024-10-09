@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Image, Container, Title, Text, List, Divider, Space } from '@mantine/core';
 import classes from './About.module.css';
+import profile from '@/assets/pp.png';
 
 export function About() {
   return (
     <Container size="md" className={classes.container}>
       <div className={classes.inner}>
-        <Image src="https://i.ibb.co.com/VWhxcQd/IMG20200217060310.jpg" className={classes.image} />
+        <Image src={profile} className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>
             Hey there!
@@ -18,7 +19,7 @@ export function About() {
             and testing.
             <Space h="md" />
             Eager to leverage analytical, technical, and programming skills to excel as an
-            entry-level software engineer.
+            entry-level software programmer.
             <Space h="md" />
             I'm particularly interested in backend development and excited to learn from experienced
             professionals.
@@ -31,7 +32,7 @@ export function About() {
             </a>{' '}
             and discuss how I can be a valuable asset to your team! My{' '}
             <a
-              href="https://drive.google.com/file/d/17Ryf3fbuDIMcebUCyMVLxXO3LiARoPf6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VqqQuQj0ElOz0sYYYmSpQIA9A7vNrDCz/view?usp=sharing"
               className={classes.link}
             >
               resume
@@ -45,7 +46,6 @@ export function About() {
             <Space h="md" />
             <List spacing="sm" size="sm">
               <List.Item>Go</List.Item>
-              <List.Item>PHP</List.Item>
               <List.Item>Typescript</List.Item>
               <List.Item>PostgreSQL</List.Item>
             </List>

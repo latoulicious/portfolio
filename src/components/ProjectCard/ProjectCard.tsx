@@ -27,27 +27,35 @@ const mockdata: CardContentProps[] = [
   {
     title: 'Sistem Informasi Perangkat Pembelajaran',
     image:
-      'https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    desc: 'An internal information system for school designed to streamline educational resource management.',
+      'https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    desc: 'Developed as my college thesis, this project is a comprehensive information system focused on optimizing educational resource management, it delivers a seamless approach to handling educational content and operations.',
     link: 'https://github.com/latoulicious/SIPP', // Add your GitHub link here
-    badges: ['Go', 'JavaScript', 'TypeScript', 'PostgreSQL'],
+    badges: ['Go', 'Vue', 'PostgreSQL'],
   },
   {
     title: 'Healthie',
     image:
-      'https://images.unsplash.com/photo-1565262353342-6e919eab5b58?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    desc: 'An internal information system for clinics designed to streamline clinic operations.',
+      'https://plus.unsplash.com/premium_photo-1682130157004-057c137d96d5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    desc: 'Designed as an internal tool, this information system aims to streamline the operations of clinics. It focuses on providing a structured and efficient approach to managing clinic processes, improving overall productivity and service delivery.',
     link: 'https://github.com/latoulicious/Healthie', // Add your GitHub link here
-    badges: ['PHP', 'Yii', 'PostgreSQL'],
+    badges: ['PHP', 'PostgreSQL'],
   },
   {
-      title: 'Twitter Kafka',
+      title: 'GoShop',
       image:
-        'https://earlsribpalace.com/wp-content/uploads/2019/07/coming-soon-store-placeholder-image.gif',
-      desc: 'Real Time Twitter feed aggregator',
-      link: '#', // Add your GitHub link here
-      badges: ['Go', 'TypeScript', 'PostgreSQL', 'Apache Kafka'],
+        'https://plus.unsplash.com/premium_photo-1661774910035-05257f7d73a6?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      desc: 'This repository contains the backend implementation of a RESTful API for an online store, developed using Go. The API supports essential e-commerce features.',
+      link: 'https://github.com/latoulicious/GoShop', // Add your GitHub link here
+      badges: ['Go', 'PostgreSQL'],
   },
+  {
+    title: 'RailsBlog',
+    image:
+      'https://images.unsplash.com/photo-1657639028182-24e11504c7c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    desc: 'RailsBlog is a RESTful CRUD API developed using Ruby on Rails. This project serves as a personal learning initiative aimed at enhancing skills in backend development by building a plain API.',
+    link: 'https://github.com/latoulicious/RailsBlog', // Add your GitHub link here
+    badges: ['Ruby', 'PostgreSQL'],
+},
   // Template In case for future project
   //   {
   //     title: 'Hawaii beaches review: better than you think',
