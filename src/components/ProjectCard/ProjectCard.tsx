@@ -32,30 +32,6 @@ const mockdata: CardContentProps[] = [
     link: 'https://github.com/latoulicious/SIPP', // Add your GitHub link here
     badges: ['Go', 'Vue', 'PostgreSQL'],
   },
-  {
-    title: 'Healthie',
-    image:
-      'https://plus.unsplash.com/premium_photo-1682130157004-057c137d96d5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    desc: 'Designed as an internal tool, this information system aims to streamline the operations of clinics. It focuses on providing a structured and efficient approach to managing clinic processes, improving overall productivity and service delivery.',
-    link: 'https://github.com/latoulicious/Healthie', // Add your GitHub link here
-    badges: ['PHP', 'PostgreSQL'],
-  },
-  {
-      title: 'GoShop',
-      image:
-        'https://plus.unsplash.com/premium_photo-1661774910035-05257f7d73a6?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      desc: 'This repository contains the backend implementation of a RESTful API for an online store, developed using Go. The API supports essential e-commerce features.',
-      link: 'https://github.com/latoulicious/GoShop', // Add your GitHub link here
-      badges: ['Go', 'PostgreSQL'],
-  },
-  {
-    title: 'RailsBlog',
-    image:
-      'https://images.unsplash.com/photo-1657639028182-24e11504c7c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    desc: 'RailsBlog is a RESTful CRUD API developed using Ruby on Rails. This project serves as a personal learning initiative aimed at enhancing skills in backend development by building a plain API.',
-    link: 'https://github.com/latoulicious/RailsBlog', // Add your GitHub link here
-    badges: ['Ruby', 'PostgreSQL'],
-},
   // Template In case for future project
   //   {
   //     title: 'Hawaii beaches review: better than you think',
